@@ -1,0 +1,175 @@
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+         <style>
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                }
+                
+                li {
+                    float: left;
+                }
+                
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                
+                li a:hover:not(.active) {
+                    background-color: #111;
+                }
+                
+                .active {
+                    background-color: rgb(86, 134, 224);
+                }
+                #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}$primary-light-blue: #8DB9ED;
+$primary-line-color: #ccc;
+* {
+  box-sizing: border-box
+}
+html, body {
+  height: 100%
+}
+body {
+	font: 11px "Open Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: auto;
+  /* display: flex; */
+  /* flex-flow: column nowrap; */
+  //This justify-content is essentially unnecessary in Firefox and Chrome due to the flex: 1 1 auto on the main.  However, it's needed to push the footer down on IE11
+  justify-content: space-between
+}
+ul {
+  list-style: none
+}
+a {
+  text-decoration: none
+}
+.generic-anchor {
+	color: $primary-light-blue;
+	&:visited {
+		color: $primary-light-blue
+	}
+	&:hover {
+		color: $primary-line-color
+	}
+}
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}</style>
+    </head>
+    <body>
+            <div class="container">
+                    <div class="wrapper">
+                        <center>
+                        <img src="images/olx1.png">
+                        <h1>Olx Pakistan</h1>
+                    </center>
+                    </div>
+
+                    
+                                    </div>
+                                    <br><br><br>
+                <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><button onclick="logout()">Logout</button></li>
+                        <li style="float:right"><a class="active" href="add.html">Submit Adds</a></li>
+                      </ul>
+                      <br><br><br>
+
+                      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                      <br><br><br>
+<ul id="myUL">
+  <li><a href="#">CARs</a></li>
+  
+  <li><a href="#">Motorcycles</a></li>
+  
+  <li><a href="#">Laptops</a></li>
+  
+  <li><a href="#">Mobiles </a></li>
+  
+
+  <li><a href="#">Tabs</a></li>
+  
+  <li><a href="#">Furniture</a></li>
+  
+  <li><a href="#">Others</a></li>
+</ul>
+    
+<center><h1>USER Account</h1></center>
+
+<div >
+   
+        <div id="mycard" class="container" class="card1"  >
+          
+        </div>
+         </div>
+
+
+<a href="add.html">Submit add</a>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+            <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script> -->
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyDSGkl1T_AX0txD9uUouy3roMtNABP1sE8",
+                authDomain: "olx-app-77691.firebaseapp.com",
+                databaseURL: "https://olx-app-77691.firebaseio.com",
+                projectId: "olx-app-77691",
+                storageBucket: "olx-app-77691.appspot.com",
+                messagingSenderId: "1029486213779"
+              };
+              firebase.initializeApp(config);
+            </script>
+<script type="text/javascript" src="js/materialize.min.js"></script>            
+<script src="useraccount.js"></script>
+</body>
+</html>

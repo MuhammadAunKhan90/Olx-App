@@ -1,0 +1,41 @@
+[debug] [2018-08-03T17:35:20.574Z] ----------------------------------------------------------------------
+[debug] [2018-08-03T17:35:20.599Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aun Khan\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-08-03T17:35:20.599Z] CLI Version:   4.0.1
+[debug] [2018-08-03T17:35:20.600Z] Platform:      win32
+[debug] [2018-08-03T17:35:20.600Z] Node Version:  v10.7.0
+[debug] [2018-08-03T17:35:20.958Z] Time:          Fri Aug 03 2018 22:35:20 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-08-03T17:35:20.959Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-03T17:35:21.288Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-03T17:35:21.289Z] > authorizing via signed-in user
+[debug] [2018-08-03T17:35:21.296Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-03T17:35:21.297Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/qWjeH26lmsOIV1psXdVDqJ46quKmJVQQcO0XK2L8XWE',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Aug 03 2018 22:35:21 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-08-03T17:35:23.656Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-03T17:35:23.685Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/olx-app-77691  
+  
+ Fri Aug 03 2018 22:35:23 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-08-03T17:35:25.780Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-03T17:35:25.782Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/olx-app-77691/tokens  
+  
+ Fri Aug 03 2018 22:35:25 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-08-03T17:35:27.144Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'olx-app-77691'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-08-03T17:35:30.266Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/olx-app-77691/uploads/-LJ-qwc1sujR3Z8-BTvl?fileCount=31&message=  
+  
+ Fri Aug 03 2018 22:35:30 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-08-03T17:35:45.153Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-03T17:35:45.154Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] +  hosting: 31 files uploaded successfully
+[debug] [2018-08-03T17:35:46.190Z] [hosting] deploy completed after 16454ms

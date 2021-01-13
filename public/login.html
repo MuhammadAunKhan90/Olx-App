@@ -1,0 +1,175 @@
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+            /* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: rgb(250, 183, 39);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #06642d;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+        </style>
+    </head>
+    <body>
+            <div class="container">
+                    <div class="wrapper">
+                        <center>
+                        <img src="images/olx1.png">
+                        <h1>Olx Pakistan</h1>
+                    </center>
+                    </div>
+                </div>
+                <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Login.html">Log in</a></li>
+                        <li><a href="signup.html">Sign up</a></li>
+                        <li style="float:right"><a class="active" href="add.html">Submit Adds</a></li>
+                      </ul>
+<br>
+            <form >
+                    <div class="imgcontainer">
+                      <img src="images/Login.png" alt="Avatar" class="avatar">
+                    </div>
+                  
+                    <div class="container">
+                      <label ><b>Email:</b></label>
+                      <input type="email" placeholder="Enter Username" id="e_mail" name="uname" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" id="p_word" name="psw" required>
+                  
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+                  
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                  <button type="submit" onclick="signIn()">Login</button>
+                  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+                  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+                  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+                  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+                  
+                  <script>
+                    // Initialize Firebase
+                    var config = {
+                      apiKey: "AIzaSyDSGkl1T_AX0txD9uUouy3roMtNABP1sE8",
+                      authDomain: "olx-app-77691.firebaseapp.com",
+                      databaseURL: "https://olx-app-77691.firebaseio.com",
+                      projectId: "olx-app-77691",
+                      storageBucket: "olx-app-77691.appspot.com",
+                      messagingSenderId: "1029486213779"
+                    };
+                    firebase.initializeApp(config);
+                  </script>
+      
+
+
+
+
+
+
+
+                                                    
+                 
+<script src="java.js"></script>
+    </body>
+</html>

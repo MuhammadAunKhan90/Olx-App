@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+        <Link href="style.css" type="text/css" rel="stylesheet">
+        
+    </head>
+    <body onload="fetchdata()">
+            <div class="chatbox">
+                    <div class="chatlogs" id="chatlogs">
+                        <div class="chat friend" id="chat friend">
+                                <div class="user-photo" id="user-photo"><img src="images/user1.jpg"></div>
+                                <p class="chat-message" id="message">What's up, Brother..!</p>
+                        </div>
+                        <div class="chat self">
+                                <div class="user-photo"><img src="images/user2.png"></div>
+                                <p class="chat-message">What's up..!</p>
+                        </div>
+                        <div class="chat friend">
+                                <div class="user-photo"><img src="images/user1.jpg"></div>
+                                <p class="chat-message">What's up, Brother..!</p>
+                        </div>
+                        <div class="chat self">
+                                <div class="user-photo"><img src="images/user2.png"></div>
+                                <p class="chat-message">What's up..!</p>
+                        </div>
+                        <div class="chat friend">
+                                <div class="user-photo"><img src="images/user1.jpg"></div>
+                                <p class="chat-message">What's up, Brother..!</p>
+                        </div>
+                        <div class="chat self">
+                                <div class="user-photo"><img src="images/user2.png"></div>
+                                <p class="chat-message">What's up..!</p>
+                        </div>
+                        <div class="chat friend">
+                                <div class="user-photo"><img src="images/user1.jpg"></div>
+                                <p class="chat-message">What's up, Brother..!</p>
+                        </div>
+                        <div class="chat self">
+                                <div class="user-photo"><img src="images/user2.png"></div>
+                                <p class="chat-message">What's up..!</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-form" >
+                        <form>
+                            <textarea class="chat-form" id="usermsg"></textarea>
+                            <button>Send</button>
+                        </form>
+                        </div>
+                </div>
+           
+
+
+
+
+
+            <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+            <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script> -->
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyDSGkl1T_AX0txD9uUouy3roMtNABP1sE8",
+                authDomain: "olx-app-77691.firebaseapp.com",
+                databaseURL: "https://olx-app-77691.firebaseio.com",
+                projectId: "olx-app-77691",
+                storageBucket: "olx-app-77691.appspot.com",
+                messagingSenderId: "1029486213779"
+              };
+              firebase.initializeApp(config);
+            </script>
+            <script src="chat.js"></script>
+    </body>
+</html> 
